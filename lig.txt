@@ -1,0 +1,7 @@
+L,Turkiye Ligi
+T,Galatasaray
+O,Alperen Sengun,14,1,0.5,20,15,17
+O,Kevin Durant,13,2,0.2,23,12,18
+T,Fenerbahce
+O,Nigel Hayes,11,3,0.5,20,15,17
+O,Kevin Durant,13,2,0.2,23,12,18

@@ -1,0 +1,2073 @@
+
+https://dpaste.org/Gtyfw
+About History New snippet
+
+    Python Expires in: 4 weeks, 1 day
+    Delete Now
+    Raw
+    Slim
+    def oynanis(hafta):
+        
+        global mac_haftası 
+        global takım1 
+        global takım2
+        global takım3
+        global takım4 
+        global takım5 
+        global takım6 
+        global takım7 
+        global takım8 
+
+        global takimbir 
+        global takimiki 
+        global takimuc
+        global takimdort 
+        global takimbes 
+        global takimalti 
+        global takimyedi 
+        global takimsekiz
+
+
+        global takimbirok 
+        global takimbirsg 
+        global takimbirkf 
+        global takimbiruf 
+        global takimbirpv 
+
+        global takimikiok 
+        global takimikisg 
+        global takimikikf 
+        global takimikiuf 
+        global takimikipv 
+
+        global takimbiroksut
+        global takimbirokteknik 
+        global takimbirokpas
+        global takimbiroksavunma 
+        global takimbirokfizik 
+        global takimbirokoverall 
+
+        global takimbirsgsut 
+        global takimbirsgteknik 
+        global takimbirsgpas 
+        global takimbirsgsavunma 
+        global takimbirsgfizik 
+        global takimbirsgoverall 
+
+        global takimbirkfsut 
+        global takimbirkfteknik 
+        global takimbirkfpas 
+        global takimbirkfsavunma 
+        global takimbirkffizik 
+        global takimbirkfoverall 
+
+        global takimbirufsut 
+        global takimbirufteknik 
+        global takimbirufpas 
+        global takimbirufsavunma 
+        global takimbiruffizik 
+        global takimbirufoverall
+
+        global takimbirpvsut 
+        global takimbirpvteknik 
+        global takimbirpvpas 
+        global takimbirpvsavunma 
+        global takimbirpvfizik 
+        global takimbirpvoverall 
+
+        global takimikioksut 
+        global takimikiokteknik
+        global takimikiokpas 
+        global takimikioksavunma 
+        global takimikiokfizik 
+        global takimikiokoverall 
+
+        global takimikisgsut 
+        global takimikisgteknik 
+        global takimikisgpas 
+        global takimikisgsavunma 
+        global takimikisgfizik 
+        global takimikisgoverall 
+
+        global takimikikfsut 
+        global takimikikfteknik 
+        global takimikikfpas 
+        global takimikikfsavunma 
+        global takimikikffizik 
+        global takimikikfoverall 
+
+        global takimikiufsut 
+        global takimikiufteknik 
+        global takimikiufpas 
+        global takimikiufsavunma 
+        global takimikiuffizik 
+        global takimikiufoverall 
+
+        global takimikipvsut 
+        global takimikipvteknik 
+        global takimikipvpas 
+        global takimikipvsavunma 
+        global takimikipvfizik 
+        global takimikipvoverall
+
+        global takimbirtopsahibi 
+        global takimbirtopsahibi2 
+        global takimbirsavunma 
+        global takimbirtime 
+        global takimbirsertlik 
+        global takimbirhücum 
+
+        global takimikitopsahibi 
+        global takimikitopsahibi2 
+        global takimikisavunma 
+        global takimikitime 
+        global takimikisertlik 
+        global takimikihücum 
+
+        global periyod 
+        global atakdevammi 
+        global zaman 
+
+        global takimbirtakimfaul 
+        global takimikitakimfaul 
+
+        global takimbirokfaul 
+        global takimbirsgfaul 
+        global takimbirkffaul 
+        global takimbiruffaul 
+        global takimbirpvfaul 
+
+        global takimikiokfaul 
+        global takimikisgfaul 
+        global takimikikffaul 
+        global takimikiuffaul 
+        global takimikipvfaul 
+
+
+        global takimbirsayi 
+        global takimikisayi 
+        
+        mac_haftası =  Program.query.filter_by(id = hafta).first()
+        takım1 = mac_haftası.takımbir
+        takım2 = mac_haftası.takımiki
+        takım3 = mac_haftası.takımuc
+        takım4 = mac_haftası.takımdort
+        takım5 = mac_haftası.takımbes
+        takım6 = mac_haftası.takımalti
+        takım7 = mac_haftası.takımyedi
+        takım8 = mac_haftası.takımsekiz
+
+        takimbir = Kadro.query.filter_by(takım = takım1).first()
+        takimiki = Kadro.query.filter_by(takım = takım2).first()
+        takimuc = Kadro.query.filter_by(takım = takım3).first()
+        takimdort = Kadro.query.filter_by(takım = takım4).first()
+        takimbes = Kadro.query.filter_by(takım = takım5).first()
+        takimalti = Kadro.query.filter_by(takım = takım6).first()
+        takimyedi = Kadro.query.filter_by(takım = takım7).first()
+        takimsekiz = Kadro.query.filter_by(takım = takım8).first()
+
+
+        takimbirok = takimbir.oyunkurucu
+        takimbirsg = takimbir.sg
+        takimbirkf = takimbir.kısaforvet
+        takimbiruf = takimbir.uzunforvet
+        takimbirpv = takimbir.pivot
+        
+        takimikiok = takimiki.oyunkurucu
+        takimikisg = takimiki.sg
+        takimikikf = takimiki.kısaforvet
+        takimikiuf = takimiki.uzunforvet
+        takimikipv = takimiki.pivot
+
+        takimbiroksut = Basketciler.query.filter_by(isim = takimbirok).first().şut
+        takimbirokteknik = Basketciler.query.filter_by(isim = takimbirok).first().teknik
+        takimbirokpas = Basketciler.query.filter_by(isim = takimbirok).first().pas
+        takimbiroksavunma = Basketciler.query.filter_by(isim = takimbirok).first().savunma
+        takimbirokfizik = Basketciler.query.filter_by(isim = takimbirok).first().fizik
+        takimbirokoverall = Basketciler.query.filter_by(isim = takimbirok).first().overall
+
+        takimbirsgsut = Basketciler.query.filter_by(isim = takimbirsg).first().şut
+        takimbirsgteknik = Basketciler.query.filter_by(isim = takimbirsg).first().teknik
+        takimbirsgpas = Basketciler.query.filter_by(isim = takimbirsg).first().pas
+        takimbirsgsavunma = Basketciler.query.filter_by(isim = takimbirsg).first().savunma
+        takimbirsgfizik = Basketciler.query.filter_by(isim = takimbirsg).first().fizik
+        takimbirsgoverall = Basketciler.query.filter_by(isim = takimbirsg).first().overall
+
+        takimbirkfsut = Basketciler.query.filter_by(isim = takimbirkf).first().şut
+        takimbirkfteknik = Basketciler.query.filter_by(isim = takimbirkf).first().teknik
+        takimbirkfpas = Basketciler.query.filter_by(isim = takimbirkf).first().pas
+        takimbirkfsavunma = Basketciler.query.filter_by(isim = takimbirkf).first().savunma
+        takimbirkffizik = Basketciler.query.filter_by(isim = takimbirkf).first().fizik
+        takimbirkfoverall = Basketciler.query.filter_by(isim = takimbirkf).first().overall
+
+        takimbirufsut = Basketciler.query.filter_by(isim = takimbiruf).first().şut
+        takimbirufteknik = Basketciler.query.filter_by(isim = takimbiruf).first().teknik
+        takimbirufpas = Basketciler.query.filter_by(isim = takimbiruf).first().pas
+        takimbirufsavunma = Basketciler.query.filter_by(isim = takimbiruf).first().savunma
+        takimbiruffizik = Basketciler.query.filter_by(isim = takimbiruf).first().fizik
+        takimbirufoverall = Basketciler.query.filter_by(isim = takimbiruf).first().overall
+
+        takimbirpvsut = Basketciler.query.filter_by(isim = takimbirpv).first().şut
+        takimbirpvteknik = Basketciler.query.filter_by(isim = takimbirpv).first().teknik
+        takimbirpvpas = Basketciler.query.filter_by(isim = takimbirpv).first().pas
+        takimbirpvsavunma = Basketciler.query.filter_by(isim = takimbirpv).first().savunma
+        takimbirpvfizik = Basketciler.query.filter_by(isim = takimbirpv).first().fizik
+        takimbirpvoverall = Basketciler.query.filter_by(isim = takimbirpv).first().overall
+
+        takimikioksut = Basketciler.query.filter_by(isim = takimikiok).first().şut
+        takimikiokteknik = Basketciler.query.filter_by(isim = takimikiok).first().teknik
+        takimikiokpas = Basketciler.query.filter_by(isim = takimikiok).first().pas
+        takimikioksavunma = Basketciler.query.filter_by(isim = takimikiok).first().savunma
+        takimikiokfizik = Basketciler.query.filter_by(isim = takimikiok).first().fizik
+        takimikiokoverall = Basketciler.query.filter_by(isim = takimikiok).first().overall
+
+        takimikisgsut = Basketciler.query.filter_by(isim = takimikisg).first().şut
+        takimikisgteknik = Basketciler.query.filter_by(isim = takimikisg).first().teknik
+        takimikisgpas = Basketciler.query.filter_by(isim = takimikisg).first().pas
+        takimikisgsavunma = Basketciler.query.filter_by(isim = takimikisg).first().savunma
+        takimikisgfizik = Basketciler.query.filter_by(isim = takimikisg).first().fizik
+        takimikisgoverall = Basketciler.query.filter_by(isim = takimikisg).first().overall
+
+        takimikikfsut = Basketciler.query.filter_by(isim = takimikikf).first().şut
+        takimikikfteknik = Basketciler.query.filter_by(isim = takimikikf).first().teknik
+        takimikikfpas = Basketciler.query.filter_by(isim = takimikikf).first().pas
+        takimikikfsavunma = Basketciler.query.filter_by(isim = takimikikf).first().savunma
+        takimikikffizik = Basketciler.query.filter_by(isim = takimikikf).first().fizik
+        takimikikfoverall = Basketciler.query.filter_by(isim = takimikikf).first().overall
+
+        takimikiufsut = Basketciler.query.filter_by(isim = takimikiuf).first().şut
+        takimikiufteknik = Basketciler.query.filter_by(isim = takimikiuf).first().teknik
+        takimikiufpas = Basketciler.query.filter_by(isim = takimikiuf).first().pas
+        takimikiufsavunma = Basketciler.query.filter_by(isim = takimikiuf).first().savunma
+        takimikiuffizik = Basketciler.query.filter_by(isim = takimikiuf).first().fizik
+        takimikiufoverall = Basketciler.query.filter_by(isim = takimikiuf).first().overall
+
+        takimikipvsut = Basketciler.query.filter_by(isim = takimikipv).first().şut
+        takimikipvteknik = Basketciler.query.filter_by(isim = takimikipv).first().teknik
+        takimikipvpas = Basketciler.query.filter_by(isim = takimikipv).first().pas
+        takimikipvsavunma = Basketciler.query.filter_by(isim = takimikipv).first().savunma
+        takimikipvfizik = Basketciler.query.filter_by(isim = takimikipv).first().fizik
+        takimikipvoverall = Basketciler.query.filter_by(isim = takimikipv).first().overall
+
+        takimbirtopsahibi = Taktikler.query.filter_by(takım = takım1).first().topsahibi
+        takimbirtopsahibi2 = Taktikler.query.filter_by(takım = takım1).first().topsahibi2
+        takimbirsavunma = Taktikler.query.filter_by(takım = takım1).first().savunma
+        takimbirtime = Taktikler.query.filter_by(takım = takım1).first().time
+        takimbirsertlik = Taktikler.query.filter_by(takım = takım1).first().sertlik
+        takimbirhücum = Taktikler.query.filter_by(takım = takım1).first().hücum
+
+        takimikitopsahibi = Taktikler.query.filter_by(takım = takım2).first().topsahibi
+        takimikitopsahibi2 = Taktikler.query.filter_by(takım = takım2).first().topsahibi2
+        takimikisavunma = Taktikler.query.filter_by(takım = takım2).first().savunma
+        takimikitime = Taktikler.query.filter_by(takım = takım2).first().time
+        takimikisertlik = Taktikler.query.filter_by(takım = takım2).first().sertlik
+        takimikihücum = Taktikler.query.filter_by(takım = takım2).first().hücum
+
+        periyod = 4
+        atakdevammi = 0
+        zaman = 720
+
+        takimbirtakimfaul = 0
+        takimikitakimfaul = 0
+
+        takimbirokfaul = 0
+        takimbirsgfaul = 0
+        takimbirkffaul = 0
+        takimbiruffaul = 0
+        takimbirpvfaul = 0
+
+        takimikiokfaul = 0
+        takimikisgfaul = 0
+        takimikikffaul = 0
+        takimikiuffaul = 0
+        takimikipvfaul = 0
+
+
+        takimbirsayi = 0
+        takimikisayi = 0
+
+        
+
+        
+        
+        
+
+    ##################################################################################
+
+        def evribaund():
+            liste6 = []
+            for i in range(int(takimbirokfizik*15/100)):
+                            liste6.append("t1ok")
+            for i in range(int(takimbirsgfizik*15/100)):
+                            liste6.append("t1sg")
+            for i in range(int(takimbirkffizik*15/100)):
+                            liste6.append("t1kf")
+            for i in range(int(takimbiruffizik*15/100)):
+                            liste6.append("t1uf")
+            for i in range(int(takimbirpvfizik*40/100)):
+                            liste6.append("t1pv")
+
+
+            for i in range(int(takimikiokfizik*45/100)):
+                            liste6.append("t2ok")
+            for i in range(int(takimikisgfizik*45/100)):
+                            liste6.append("t2sg")
+            for i in range(int(takimikikffizik*45/100)):
+                            liste6.append("t2kf")
+            for i in range(int(takimikiuffizik*45/100)):
+                            liste6.append("t2uf")
+            for i in range(int(takimikipvfizik*120/100)):
+                            liste6.append("t2pv")
+            e = random.choice(liste6)
+            if e == "t1ok":
+                b = takimbirok
+                print("Ribaund: ",b)
+            if e == "t1sg":
+                b = takimbirsg
+                print("Ribaund: ",b)
+            if e == "t1kf":
+                b = takimbirkf
+                print("Ribaund: ",b)
+            if e == "t1uf":
+                b = takimbiruf
+                print("Ribaund: ",b)
+            if e == "t1pv":
+                b = takimbirpv
+                print("Ribaund: ",b)
+            if e == "t2ok":
+                b = takimikiok
+                print("Ribaund: ",b)
+            if e == "t2sg":
+                b = takimikisg
+                print("Ribaund: ",b)
+            if e == "t2kf":
+                b = takimikikf
+                print("Ribaund: ",b)
+            if e == "t2uf":
+                b = takimikiuf
+                print("Ribaund: ",b)
+            if e == "t2pv":
+                b = takimikipv
+                print("Ribaund: ",b)
+                    
+            if(e[1] == "1"):
+                            print("b:",b)
+                            taha(b)
+            else:
+                            tarik(b)
+
+    ##################################################################################
+
+
+        def depribaund():
+            liste6 = []
+            for i in range(int(takimikiokfizik*15/100)):
+                            liste6.append("t2ok")
+            for i in range(int(takimikisgfizik*15/100)):
+                            liste6.append("t2sg")
+            for i in range(int(takimikikffizik*15/100)):
+                            liste6.append("t2kf")
+            for i in range(int(takimikiuffizik*15/100)):
+                            liste6.append("t2uf")
+            for i in range(int(takimikipvfizik*40/100)):
+                            liste6.append("t2pv")
+
+
+            for i in range(int(takimbirokfizik*45/100)):
+                            liste6.append("t1ok")
+            for i in range(int(takimbirsgfizik*45/100)):
+                            liste6.append("t1sg")
+            for i in range(int(takimbirkffizik*45/100)):
+                            liste6.append("t1kf")
+            for i in range(int(takimbiruffizik*45/100)):
+                            liste6.append("t1uf")
+            for i in range(int(takimbirpvfizik*120/100)):
+                            liste6.append("t1pv")
+                        
+            e = random.choice(liste6)
+            
+            if e =="t1ok":
+                b=takimbirok
+                print("Ribaund: ",b)
+            if e =="t1sg":
+                b=takimbirsg
+                print("Ribaund: ",b)
+            if e =="t1kf":
+                b = takimbirkf
+                print("Ribaund: ",b)
+            if e == "t1uf":
+                b = takimbiruf
+                print("Ribaund: ",b)
+            if e == "t1pv":
+                b = takimbirpv
+                print("Ribaund: ",b)
+            if e == "t2ok":
+                b = takimikiok
+                print("Ribaund: ",b)
+            if e == "t2sg":
+                b = takimikisg
+                print("Ribaund: ",b)
+            if e == "t2kf":
+                b = takimikikf
+                print("Ribaund: ",b)
+            if e == "t2uf":
+                b = takimikiuf
+                print("Ribaund: ",b)
+            if e == "t2pv":
+                b = takimikipv
+                print("Ribaund: ",b)
+                    
+            if(e[1] == "1"):
+                            taha(b)
+            else:
+                            tarik(b)
+
+
+
+
+
+
+    ##################################################################################
+
+
+
+
+
+        def taha(b=""):
+                global mac_haftası 
+                global takım1 
+                global takım2
+                global takım3
+                global takım4 
+                global takım5 
+                global takım6 
+                global takım7 
+                global takım8 
+
+                global takimbir 
+                global takimiki 
+                global takimuc
+                global takimdort 
+                global takimbes 
+                global takimalti 
+                global takimyedi 
+                global takimsekiz
+
+
+                global takimbirok 
+                global takimbirsg 
+                global takimbirkf 
+                global takimbiruf 
+                global takimbirpv 
+
+                global takimikiok 
+                global takimikisg 
+                global takimikikf 
+                global takimikiuf 
+                global takimikipv 
+
+                global takimbiroksut
+                global takimbirokteknik 
+                global takimbirokpas
+                global takimbiroksavunma 
+                global takimbirokfizik 
+                global takimbirokoverall 
+
+                global takimbirsgsut 
+                global takimbirsgteknik 
+                global takimbirsgpas 
+                global takimbirsgsavunma 
+                global takimbirsgfizik 
+                global takimbirsgoverall 
+
+                global takimbirkfsut 
+                global takimbirkfteknik 
+                global takimbirkfpas 
+                global takimbirkfsavunma 
+                global takimbirkffizik 
+                global takimbirkfoverall 
+
+                global takimbirufsut 
+                global takimbirufteknik 
+                global takimbirufpas 
+                global takimbirufsavunma 
+                global takimbiruffizik 
+                global takimbirufoverall
+
+                global takimbirpvsut 
+                global takimbirpvteknik 
+                global takimbirpvpas 
+                global takimbirpvsavunma 
+                global takimbirpvfizik 
+                global takimbirpvoverall
+                global takimikioksut 
+                global takimikiokteknik
+                global takimikiokpas 
+                global takimikioksavunma 
+                global takimikiokfizik 
+                global takimikiokoverall 
+
+                global takimikisgsut 
+                global takimikisgteknik 
+                global takimikisgpas 
+                global takimikisgsavunma 
+                global takimikisgfizik 
+                global takimikisgoverall 
+
+                global takimikikfsut 
+                global takimikikfteknik 
+                global takimikikfpas 
+                global takimikikfsavunma 
+                global takimikikffizik 
+                global takimikikfoverall 
+
+                global takimikiufsut 
+                global takimikiufteknik 
+                global takimikiufpas 
+                global takimikiufsavunma 
+                global takimikiuffizik 
+                global takimikiufoverall 
+
+                global takimikipvsut 
+                global takimikipvteknik 
+                global takimikipvpas 
+                global takimikipvsavunma 
+                global takimikipvfizik 
+                global takimikipvoverall
+
+                global takimbirtopsahibi 
+                global takimbirtopsahibi2 
+                global takimbirsavunma 
+                global takimbirtime 
+                global takimbirsertlik 
+                global takimbirhücum 
+
+                global takimikitopsahibi 
+                global takimikitopsahibi2 
+                global takimikisavunma 
+                global takimikitime 
+                global takimikisertlik 
+                global takimikihücum 
+
+                global periyod 
+                global atakdevammi 
+                global zaman 
+
+                global takimbirtakimfaul 
+                global takimikitakimfaul 
+
+                global takimbirokfaul 
+                global takimbirsgfaul 
+                global takimbirkffaul 
+                global takimbiruffaul 
+                global takimbirpvfaul 
+
+                global takimikiokfaul 
+                global takimikisgfaul 
+                global takimikikffaul 
+                global takimikiuffaul 
+                global takimikipvfaul 
+
+
+                global takimbirsayi 
+                global takimikisayi 
+                if atakdevammi == 0:
+                    liste1 = []
+                    for i in range(2):
+                        liste1.append(takimbirtopsahibi)
+                    liste1.append(takimbirtopsahibi2)
+                    liste1.append(takimbirok)
+                    liste1.append(takimbirsg)
+                    liste1.append(takimbirkf)
+                    liste1.append(takimbiruf)
+                    liste1.append(takimbirpv)
+
+                    b = random.choice(liste1)
+                    print(b)
+                    time.sleep(2)
+                    
+                sutdeneme = Basketciler.query.filter_by(isim = b).first().şut
+                icerigirme = Basketciler.query.filter_by(isim = b).first().teknik
+                
+                fark = int((sutdeneme - icerigirme)/2)
+
+
+                liste2 = []
+                for i in range(50):
+                    liste2.append("pas")
+                for i in range(25-fark):
+                    liste2.append("icerigirme")
+                for i in range(25+fark):
+                    liste2.append("sut")    
+                if takimikisavunma == "adam":
+                    liste2.append("icerigirme")
+                    liste2.append("icerigirme")
+                else:   
+                    liste2.append("sut")
+                    liste2.append("sut")
+                 
+                for i in range(12 + int(takimikisertlik * 22/100)):    
+                    liste2.append("faul")
+                    
+
+                c = random.choice(liste2)
+                print(c)
+                time.sleep(1)
+                if c == "sut":
+                    liste5 = []
+                    for i in range(80):
+                        liste5.append(0)
+                    x = Basketciler.query.filter_by(isim = b).first().mevki
+                    xx = Basketciler.query.filter_by(isim = b).first().şut
+                    
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım2).first().savunma
+                    for i in range(y):
+                        liste5.append(0)
+                    for i in range(xx):
+                        liste5.append(1)
+                    u = random.choice(liste5)
+                    print("girdi mi: ",u)
+                    time.sleep(2)
+                    if u == 1:
+                        takimbirsayi += 3
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        atakdevammi = 1
+                        evribaund()
+
+                if c == "icerigirme":
+                    liste10=[]
+                    x = Basketciler.query.filter_by(isim = b).first().mevki                
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım2).first().savunma
+                    for i in range(icerigirme):
+                        liste10.append(1)
+                    for i in range(y):
+                        liste10.append(0)
+                    t = random.choice(liste10)
+                    print("icerigirme: ",t)
+                    time.sleep(2)
+                    if t == 1:
+                        takimbirsayi+=2
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        atakdevammi = 1
+                        evribaund()
+                
+
+                if c == "faul":
+                    x = Basketciler.query.filter_by(isim = b).first().şut 
+                    x-=5
+                    a = randint(1,100)
+                    if a < x :
+                        takimbirsayi+=1
+                        print("Atis Basarili")
+                    a = randint(1,100)
+                    if a < x:
+                        takimbirsayi+=1
+                        print("Atis Basarili")
+                        time.sleep(2)
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        print("Atis Basarisiz")
+                        atakdevammi = 1
+                        evribaund()
+                
+                if c == "pas":
+                    a = randint(1,100)
+                    x = Basketciler.query.filter_by(isim = b).first().pas
+                    time.sleep(1)
+                    if a > x:
+                        print("Pas Başarısız")
+                        atakdevammi = 0
+                        tarik()
+                    else:
+
+                        liste11=[]
+                        liste11.append(takimbirtopsahibi)
+                        liste11.append(takimbirtopsahibi)
+                        liste11.append(takimbirtopsahibi2)
+                        liste11.append(takimbirok)
+                        liste11.append(takimbirsg)
+                        liste11.append(takimbirkf)
+                        liste11.append(takimbiruf)
+                        liste11.append(takimbirpv)
+                        while liste11.count(b) > 0:
+                            liste11.remove(b)
+                        b = random.choice(liste11)
+                        print(b)
+                        time.sleep(2)
+                        atakdevammi = 1
+                        taha(b)
+            
+
+
+
+
+
+
+    ##################################################################################
+
+
+
+
+
+
+
+        def tarik(b=""):
+                global mac_haftası 
+                global takım1 
+                global takım2
+                global takım3
+                global takım4 
+                global takım5 
+                global takım6 
+                global takım7 
+                global takım8 
+
+                global takimbir 
+                global takimiki 
+                global takimuc
+                global takimdort 
+                global takimbes 
+                global takimalti 
+                global takimyedi 
+                global takimsekiz
+
+
+                global takimbirok 
+                global takimbirsg 
+                global takimbirkf 
+                global takimbiruf 
+                global takimbirpv 
+
+                global takimikiok 
+                global takimikisg 
+                global takimikikf 
+                global takimikiuf 
+                global takimikipv 
+
+                global takimbiroksut
+                global takimbirokteknik 
+                global takimbirokpas
+                global takimbiroksavunma 
+                global takimbirokfizik 
+                global takimbirokoverall 
+
+                global takimbirsgsut 
+                global takimbirsgteknik 
+                global takimbirsgpas 
+                global takimbirsgsavunma 
+                global takimbirsgfizik 
+                global takimbirsgoverall
+                global takimbirkfsut 
+                global takimbirkfteknik 
+                global takimbirkfpas 
+                global takimbirkfsavunma 
+                global takimbirkffizik 
+                global takimbirkfoverall 
+
+                global takimbirufsut 
+                global takimbirufteknik 
+                global takimbirufpas 
+                global takimbirufsavunma 
+                global takimbiruffizik 
+                global takimbirufoverall
+
+                global takimbirpvsut 
+                global takimbirpvteknik 
+                global takimbirpvpas 
+                global takimbirpvsavunma 
+                global takimbirpvfizik 
+                global takimbirpvoverall 
+
+                global takimikioksut 
+                global takimikiokteknik
+                global takimikiokpas 
+                global takimikioksavunma 
+                global takimikiokfizik 
+                global takimikiokoverall 
+
+                global takimikisgsut 
+                global takimikisgteknik 
+                global takimikisgpas 
+                global takimikisgsavunma 
+                global takimikisgfizik 
+                global takimikisgoverall 
+
+                global takimikikfsut 
+                global takimikikfteknik 
+                global takimikikfpas 
+                global takimikikfsavunma 
+                global takimikikffizik 
+                global takimikikfoverall 
+
+                global takimikiufsut 
+                global takimikiufteknik 
+                global takimikiufpas 
+                global takimikiufsavunma 
+                global takimikiuffizik 
+                global takimikiufoverall 
+
+                global takimikipvsut 
+                global takimikipvteknik 
+                global takimikipvpas 
+                global takimikipvsavunma 
+                global takimikipvfizik 
+                global takimikipvoverall
+
+                global takimbirtopsahibi 
+                global takimbirtopsahibi2 
+                global takimbirsavunma 
+                global takimbirtime 
+                global takimbirsertlik 
+                global takimbirhücum 
+
+                global takimikitopsahibi 
+                global takimikitopsahibi2 
+                global takimikisavunma 
+                global takimikitime 
+                global takimikisertlik 
+                global takimikihücum 
+
+                global periyod 
+                global atakdevammi 
+                global zaman 
+
+                global takimbirtakimfaul 
+                global takimikitakimfaul 
+
+                global takimbirokfaul 
+                global takimbirsgfaul 
+                global takimbirkffaul 
+                global takimbiruffaul 
+                global takimbirpvfaul 
+
+                global takimikiokfaul 
+                global takimikisgfaul 
+                global takimikikffaul 
+                global takimikiuffaul 
+                global takimikipvfaul 
+
+
+                global takimbirsayi 
+                global takimikisayi 
+                if atakdevammi == 0:
+                    liste1 = []
+                    for i in range(2):
+                        liste1.append(takimikitopsahibi)
+                    liste1.append(takimikitopsahibi2)
+                    liste1.append(takimikiok)
+                    liste1.append(takimikisg)
+                    liste1.append(takimikikf)
+                    liste1.append(takimikiuf)
+                    liste1.append(takimikipv)
+
+                    b = random.choice(liste1)
+                    print(b)
+                
+                
+                print("b",b)
+                sutdeneme = Basketciler.query.filter_by(isim = b).first().şut
+                icerigirme = Basketciler.query.filter_by(isim = b).first().teknik
+                
+                fark = int((sutdeneme - icerigirme)/2)
+
+
+                liste2 = []
+                for i in range(50):
+                    liste2.append("pas")
+                for i in range(25-fark):
+                    liste2.append("icerigirme")
+                for i in range(25+fark):
+                    liste2.append("sut")    
+                if takimikisavunma == "adam":
+                    liste2.append("icerigirme")
+                    liste2.append("icerigirme")
+                else:   
+                    liste2.append("sut")
+                    liste2.append("sut")
+                 
+                for i in range(12 + int(takimikisertlik * 22/100)):    
+                    liste2.append("faul")
+                c = random.choice(liste2)
+                print(c)
+                if c == "sut":
+                    liste5 = []
+                    for i in range(80):
+                        liste5.append(0)
+                    x = Basketciler.query.filter_by(isim = b).first().mevki
+                    xx = Basketciler.query.filter_by(isim = b).first().şut
+                    
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım1).first().savunma
+                    for i in range(y):
+                        liste5.append(0)
+                    for i in range(xx):
+                        liste5.append(1)
+                    u = random.choice(liste5)
+                    print("girdi mi: ",u)
+                    time.sleep(2)
+                    if u == 1:
+                        takimikisayi += 3
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        atakdevammi = 1
+                        depribaund()
+
+                if c == "icerigirme":
+                    liste10=[]
+                    x = Basketciler.query.filter_by(isim = b).first().mevki              
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım1).first().savunma
+                    for i in range(icerigirme):
+                        liste10.append(1)
+                    for i in range(y):
+                        liste10.append(0)
+                    t = random.choice(liste10)
+                    print("iceri girme: ",t)
+                    time.sleep(2)
+                    if t == 1:
+                        takimikisayi+=2
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        atakdevammi = 1
+                        depribaund()
+                
+
+
+                if c == "faul":
+                    x = Basketciler.query.filter_by(isim = b).first().şut 
+                    x-=5
+                    a = randint(1,100)
+                    if a < x :
+                        takimikisayi+=1
+                        print("Birinci atis basarili")
+                        time.sleep(1)
+                    else:
+                        print("Brinci atis isabetsiz")
+                        time.sleep(2)
+                    a = randint(1,100)
+                    if a < x:
+                        takimikisayi+=1
+                        print("İkinci Atis basarili")
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        time.sleep(1)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        print("İkinci atis basarisiz")
+                        atakdevammi = 1
+                        time.sleep(2)
+                        depribaund()
+                        
+                
+                if c == "pas":
+                    a = randint(1,100)
+                    time.sleep(1)
+                    x = Basketciler.query.filter_by(isim = b).first().pas
+                    if a > x:
+                        atakdevammi=0
+                        print("Pas Başarısız")
+                        taha()
+                    else:
+
+                        liste11=[]
+                        liste11.append(takimikitopsahibi)
+                        liste11.append(takimikitopsahibi)
+                        liste11.append(takimikitopsahibi2)
+                        liste11.append(takimikiok)
+                        liste11.append(takimikisg)
+                        liste11.append(takimikikf)
+                        liste11.append(takimikiuf)
+                        liste11.append(takimikipv)
+                        while liste11.count(b) > 0:
+                            liste11.remove(b)
+                        b = random.choice(liste11)
+                        print(b)
+                        time.sleep(2)
+                        tarik(b)
+                    
+
+                                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+        taha()
+    Copy Snippet
+    Edit Snippet
+    Wordwrap
+
+Snippet content copied to clipboard.
+Are you sure to delete this snippet?
+No, don't delete
+
+    def oynanis(hafta):
+        
+        global mac_haftası 
+        global takım1 
+        global takım2
+        global takım3
+        global takım4 
+        global takım5 
+        global takım6 
+        global takım7 
+        global takım8 
+    ​
+        global takimbir 
+        global takimiki 
+        global takimuc
+        global takimdort 
+        global takimbes 
+        global takimalti 
+        global takimyedi 
+        global takimsekiz
+    ​
+    ​
+        global takimbirok 
+        global takimbirsg 
+        global takimbirkf 
+        global takimbiruf 
+        global takimbirpv 
+    ​
+        global takimikiok 
+        global takimikisg 
+        global takimikikf 
+        global takimikiuf 
+        global takimikipv 
+    ​
+        global takimbiroksut
+        global takimbirokteknik 
+        global takimbirokpas
+        global takimbiroksavunma 
+        global takimbirokfizik 
+        global takimbirokoverall 
+    ​
+        global takimbirsgsut 
+        global takimbirsgteknik 
+        global takimbirsgpas 
+        global takimbirsgsavunma 
+        global takimbirsgfizik 
+        global takimbirsgoverall 
+    ​
+        global takimbirkfsut 
+        global takimbirkfteknik 
+        global takimbirkfpas 
+        global takimbirkfsavunma 
+        global takimbirkffizik 
+        global takimbirkfoverall 
+    ​
+        global takimbirufsut 
+        global takimbirufteknik 
+        global takimbirufpas 
+        global takimbirufsavunma 
+        global takimbiruffizik 
+        global takimbirufoverall
+    ​
+        global takimbirpvsut 
+        global takimbirpvteknik 
+        global takimbirpvpas 
+        global takimbirpvsavunma 
+        global takimbirpvfizik 
+        global takimbirpvoverall 
+    ​
+        global takimikioksut 
+        global takimikiokteknik
+        global takimikiokpas 
+        global takimikioksavunma 
+        global takimikiokfizik 
+        global takimikiokoverall 
+    ​
+        global takimikisgsut 
+        global takimikisgteknik 
+        global takimikisgpas 
+        global takimikisgsavunma 
+        global takimikisgfizik 
+        global takimikisgoverall 
+    ​
+        global takimikikfsut 
+        global takimikikfteknik 
+        global takimikikfpas 
+        global takimikikfsavunma 
+        global takimikikffizik 
+        global takimikikfoverall 
+    ​
+        global takimikiufsut 
+        global takimikiufteknik 
+        global takimikiufpas 
+        global takimikiufsavunma 
+        global takimikiuffizik 
+        global takimikiufoverall 
+    ​
+        global takimikipvsut 
+        global takimikipvteknik 
+        global takimikipvpas 
+        global takimikipvsavunma 
+        global takimikipvfizik 
+        global takimikipvoverall
+    ​
+        global takimbirtopsahibi 
+        global takimbirtopsahibi2 
+        global takimbirsavunma 
+        global takimbirtime 
+        global takimbirsertlik 
+        global takimbirhücum 
+    ​
+        global takimikitopsahibi 
+        global takimikitopsahibi2 
+        global takimikisavunma 
+        global takimikitime 
+        global takimikisertlik 
+        global takimikihücum 
+    ​
+        global periyod 
+        global atakdevammi 
+        global zaman 
+    ​
+        global takimbirtakimfaul 
+        global takimikitakimfaul 
+    ​
+        global takimbirokfaul 
+        global takimbirsgfaul 
+        global takimbirkffaul 
+        global takimbiruffaul 
+        global takimbirpvfaul 
+    ​
+        global takimikiokfaul 
+        global takimikisgfaul 
+        global takimikikffaul 
+        global takimikiuffaul 
+        global takimikipvfaul 
+    ​
+    ​
+        global takimbirsayi 
+        global takimikisayi 
+        
+        mac_haftası =  Program.query.filter_by(id = hafta).first()
+        takım1 = mac_haftası.takımbir
+        takım2 = mac_haftası.takımiki
+        takım3 = mac_haftası.takımuc
+        takım4 = mac_haftası.takımdort
+        takım5 = mac_haftası.takımbes
+        takım6 = mac_haftası.takımalti
+        takım7 = mac_haftası.takımyedi
+        takım8 = mac_haftası.takımsekiz
+    ​
+        takimbir = Kadro.query.filter_by(takım = takım1).first()
+        takimiki = Kadro.query.filter_by(takım = takım2).first()
+        takimuc = Kadro.query.filter_by(takım = takım3).first()
+        takimdort = Kadro.query.filter_by(takım = takım4).first()
+        takimbes = Kadro.query.filter_by(takım = takım5).first()
+        takimalti = Kadro.query.filter_by(takım = takım6).first()
+        takimyedi = Kadro.query.filter_by(takım = takım7).first()
+        takimsekiz = Kadro.query.filter_by(takım = takım8).first()
+    ​
+    ​
+        takimbirok = takimbir.oyunkurucu
+        takimbirsg = takimbir.sg
+        takimbirkf = takimbir.kısaforvet
+        takimbiruf = takimbir.uzunforvet
+        takimbirpv = takimbir.pivot
+        
+        takimikiok = takimiki.oyunkurucu
+        takimikisg = takimiki.sg
+        takimikikf = takimiki.kısaforvet
+        takimikiuf = takimiki.uzunforvet
+        takimikipv = takimiki.pivot
+    ​
+        takimbiroksut = Basketciler.query.filter_by(isim = takimbirok).first().şut
+        takimbirokteknik = Basketciler.query.filter_by(isim = takimbirok).first().teknik
+        takimbirokpas = Basketciler.query.filter_by(isim = takimbirok).first().pas
+        takimbiroksavunma = Basketciler.query.filter_by(isim = takimbirok).first().savunma
+        takimbirokfizik = Basketciler.query.filter_by(isim = takimbirok).first().fizik
+        takimbirokoverall = Basketciler.query.filter_by(isim = takimbirok).first().overall
+    ​
+        takimbirsgsut = Basketciler.query.filter_by(isim = takimbirsg).first().şut
+        takimbirsgteknik = Basketciler.query.filter_by(isim = takimbirsg).first().teknik
+        takimbirsgpas = Basketciler.query.filter_by(isim = takimbirsg).first().pas
+        takimbirsgsavunma = Basketciler.query.filter_by(isim = takimbirsg).first().savunma
+        takimbirsgfizik = Basketciler.query.filter_by(isim = takimbirsg).first().fizik
+        takimbirsgoverall = Basketciler.query.filter_by(isim = takimbirsg).first().overall
+    ​
+        takimbirkfsut = Basketciler.query.filter_by(isim = takimbirkf).first().şut
+        takimbirkfteknik = Basketciler.query.filter_by(isim = takimbirkf).first().teknik
+        takimbirkfpas = Basketciler.query.filter_by(isim = takimbirkf).first().pas
+        takimbirkfsavunma = Basketciler.query.filter_by(isim = takimbirkf).first().savunma
+        takimbirkffizik = Basketciler.query.filter_by(isim = takimbirkf).first().fizik
+        takimbirkfoverall = Basketciler.query.filter_by(isim = takimbirkf).first().overall
+    ​
+        takimbirufsut = Basketciler.query.filter_by(isim = takimbiruf).first().şut
+        takimbirufteknik = Basketciler.query.filter_by(isim = takimbiruf).first().teknik
+        takimbirufpas = Basketciler.query.filter_by(isim = takimbiruf).first().pas
+        takimbirufsavunma = Basketciler.query.filter_by(isim = takimbiruf).first().savunma
+        takimbiruffizik = Basketciler.query.filter_by(isim = takimbiruf).first().fizik
+        takimbirufoverall = Basketciler.query.filter_by(isim = takimbiruf).first().overall
+    ​
+        takimbirpvsut = Basketciler.query.filter_by(isim = takimbirpv).first().şut
+        takimbirpvteknik = Basketciler.query.filter_by(isim = takimbirpv).first().teknik
+        takimbirpvpas = Basketciler.query.filter_by(isim = takimbirpv).first().pas
+        takimbirpvsavunma = Basketciler.query.filter_by(isim = takimbirpv).first().savunma
+        takimbirpvfizik = Basketciler.query.filter_by(isim = takimbirpv).first().fizik
+        takimbirpvoverall = Basketciler.query.filter_by(isim = takimbirpv).first().overall
+    ​
+        takimikioksut = Basketciler.query.filter_by(isim = takimikiok).first().şut
+        takimikiokteknik = Basketciler.query.filter_by(isim = takimikiok).first().teknik
+        takimikiokpas = Basketciler.query.filter_by(isim = takimikiok).first().pas
+        takimikioksavunma = Basketciler.query.filter_by(isim = takimikiok).first().savunma
+        takimikiokfizik = Basketciler.query.filter_by(isim = takimikiok).first().fizik
+        takimikiokoverall = Basketciler.query.filter_by(isim = takimikiok).first().overall
+    ​
+        takimikisgsut = Basketciler.query.filter_by(isim = takimikisg).first().şut
+        takimikisgteknik = Basketciler.query.filter_by(isim = takimikisg).first().teknik
+        takimikisgpas = Basketciler.query.filter_by(isim = takimikisg).first().pas
+        takimikisgsavunma = Basketciler.query.filter_by(isim = takimikisg).first().savunma
+        takimikisgfizik = Basketciler.query.filter_by(isim = takimikisg).first().fizik
+        takimikisgoverall = Basketciler.query.filter_by(isim = takimikisg).first().overall
+    ​
+        takimikikfsut = Basketciler.query.filter_by(isim = takimikikf).first().şut
+        takimikikfteknik = Basketciler.query.filter_by(isim = takimikikf).first().teknik
+        takimikikfpas = Basketciler.query.filter_by(isim = takimikikf).first().pas
+        takimikikfsavunma = Basketciler.query.filter_by(isim = takimikikf).first().savunma
+        takimikikffizik = Basketciler.query.filter_by(isim = takimikikf).first().fizik
+        takimikikfoverall = Basketciler.query.filter_by(isim = takimikikf).first().overall
+    ​
+        takimikiufsut = Basketciler.query.filter_by(isim = takimikiuf).first().şut
+        takimikiufteknik = Basketciler.query.filter_by(isim = takimikiuf).first().teknik
+        takimikiufpas = Basketciler.query.filter_by(isim = takimikiuf).first().pas
+        takimikiufsavunma = Basketciler.query.filter_by(isim = takimikiuf).first().savunma
+        takimikiuffizik = Basketciler.query.filter_by(isim = takimikiuf).first().fizik
+        takimikiufoverall = Basketciler.query.filter_by(isim = takimikiuf).first().overall
+    ​
+        takimikipvsut = Basketciler.query.filter_by(isim = takimikipv).first().şut
+        takimikipvteknik = Basketciler.query.filter_by(isim = takimikipv).first().teknik
+        takimikipvpas = Basketciler.query.filter_by(isim = takimikipv).first().pas
+        takimikipvsavunma = Basketciler.query.filter_by(isim = takimikipv).first().savunma
+        takimikipvfizik = Basketciler.query.filter_by(isim = takimikipv).first().fizik
+        takimikipvoverall = Basketciler.query.filter_by(isim = takimikipv).first().overall
+    ​
+        takimbirtopsahibi = Taktikler.query.filter_by(takım = takım1).first().topsahibi
+        takimbirtopsahibi2 = Taktikler.query.filter_by(takım = takım1).first().topsahibi2
+        takimbirsavunma = Taktikler.query.filter_by(takım = takım1).first().savunma
+        takimbirtime = Taktikler.query.filter_by(takım = takım1).first().time
+        takimbirsertlik = Taktikler.query.filter_by(takım = takım1).first().sertlik
+        takimbirhücum = Taktikler.query.filter_by(takım = takım1).first().hücum
+    ​
+        takimikitopsahibi = Taktikler.query.filter_by(takım = takım2).first().topsahibi
+        takimikitopsahibi2 = Taktikler.query.filter_by(takım = takım2).first().topsahibi2
+        takimikisavunma = Taktikler.query.filter_by(takım = takım2).first().savunma
+        takimikitime = Taktikler.query.filter_by(takım = takım2).first().time
+        takimikisertlik = Taktikler.query.filter_by(takım = takım2).first().sertlik
+        takimikihücum = Taktikler.query.filter_by(takım = takım2).first().hücum
+    ​
+        periyod = 4
+        atakdevammi = 0
+        zaman = 720
+    ​
+        takimbirtakimfaul = 0
+        takimikitakimfaul = 0
+    ​
+        takimbirokfaul = 0
+        takimbirsgfaul = 0
+        takimbirkffaul = 0
+        takimbiruffaul = 0
+        takimbirpvfaul = 0
+    ​
+        takimikiokfaul = 0
+        takimikisgfaul = 0
+        takimikikffaul = 0
+        takimikiuffaul = 0
+        takimikipvfaul = 0
+    ​
+    ​
+        takimbirsayi = 0
+        takimikisayi = 0
+    ​
+        
+    ​
+        
+        
+        
+    ​
+    ##################################################################################
+    ​
+        def evribaund():
+            liste6 = []
+            for i in range(int(takimbirokfizik*15/100)):
+                            liste6.append("t1ok")
+            for i in range(int(takimbirsgfizik*15/100)):
+                            liste6.append("t1sg")
+            for i in range(int(takimbirkffizik*15/100)):
+                            liste6.append("t1kf")
+            for i in range(int(takimbiruffizik*15/100)):
+                            liste6.append("t1uf")
+            for i in range(int(takimbirpvfizik*40/100)):
+                            liste6.append("t1pv")
+    ​
+    ​
+            for i in range(int(takimikiokfizik*45/100)):
+                            liste6.append("t2ok")
+            for i in range(int(takimikisgfizik*45/100)):
+                            liste6.append("t2sg")
+            for i in range(int(takimikikffizik*45/100)):
+                            liste6.append("t2kf")
+            for i in range(int(takimikiuffizik*45/100)):
+                            liste6.append("t2uf")
+            for i in range(int(takimikipvfizik*120/100)):
+                            liste6.append("t2pv")
+            e = random.choice(liste6)
+            if e == "t1ok":
+                b = takimbirok
+                print("Ribaund: ",b)
+            if e == "t1sg":
+                b = takimbirsg
+                print("Ribaund: ",b)
+            if e == "t1kf":
+                b = takimbirkf
+                print("Ribaund: ",b)
+            if e == "t1uf":
+                b = takimbiruf
+                print("Ribaund: ",b)
+            if e == "t1pv":
+                b = takimbirpv
+                print("Ribaund: ",b)
+            if e == "t2ok":
+                b = takimikiok
+                print("Ribaund: ",b)
+            if e == "t2sg":
+                b = takimikisg
+                print("Ribaund: ",b)
+            if e == "t2kf":
+                b = takimikikf
+                print("Ribaund: ",b)
+            if e == "t2uf":
+                b = takimikiuf
+                print("Ribaund: ",b)
+            if e == "t2pv":
+                b = takimikipv
+                print("Ribaund: ",b)
+                    
+            if(e[1] == "1"):
+                            print("b:",b)
+                            taha(b)
+            else:
+                            tarik(b)
+    ​
+    ##################################################################################
+    ​
+    ​
+        def depribaund():
+            liste6 = []
+            for i in range(int(takimikiokfizik*15/100)):
+                            liste6.append("t2ok")
+            for i in range(int(takimikisgfizik*15/100)):
+                            liste6.append("t2sg")
+            for i in range(int(takimikikffizik*15/100)):
+                            liste6.append("t2kf")
+            for i in range(int(takimikiuffizik*15/100)):
+                            liste6.append("t2uf")
+            for i in range(int(takimikipvfizik*40/100)):
+                            liste6.append("t2pv")
+    ​
+    ​
+            for i in range(int(takimbirokfizik*45/100)):
+                            liste6.append("t1ok")
+            for i in range(int(takimbirsgfizik*45/100)):
+                            liste6.append("t1sg")
+            for i in range(int(takimbirkffizik*45/100)):
+                            liste6.append("t1kf")
+            for i in range(int(takimbiruffizik*45/100)):
+                            liste6.append("t1uf")
+            for i in range(int(takimbirpvfizik*120/100)):
+                            liste6.append("t1pv")
+                        
+            e = random.choice(liste6)
+            
+            if e =="t1ok":
+                b=takimbirok
+                print("Ribaund: ",b)
+            if e =="t1sg":
+                b=takimbirsg
+                print("Ribaund: ",b)
+            if e =="t1kf":
+                b = takimbirkf
+                print("Ribaund: ",b)
+            if e == "t1uf":
+                b = takimbiruf
+                print("Ribaund: ",b)
+            if e == "t1pv":
+                b = takimbirpv
+                print("Ribaund: ",b)
+            if e == "t2ok":
+                b = takimikiok
+                print("Ribaund: ",b)
+            if e == "t2sg":
+                b = takimikisg
+                print("Ribaund: ",b)
+            if e == "t2kf":
+                b = takimikikf
+                print("Ribaund: ",b)
+            if e == "t2uf":
+                b = takimikiuf
+                print("Ribaund: ",b)
+            if e == "t2pv":
+                b = takimikipv
+                print("Ribaund: ",b)
+                    
+            if(e[1] == "1"):
+                            taha(b)
+            else:
+                            tarik(b)
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ##################################################################################
+    ​
+    ​
+    ​
+    ​
+    ​
+        def taha(b=""):
+                global mac_haftası 
+                global takım1 
+                global takım2
+                global takım3
+                global takım4 
+                global takım5 
+                global takım6 
+                global takım7 
+                global takım8 
+    ​
+                global takimbir 
+                global takimiki 
+                global takimuc
+                global takimdort 
+                global takimbes 
+                global takimalti 
+                global takimyedi 
+                global takimsekiz
+    ​
+    ​
+                global takimbirok 
+                global takimbirsg 
+                global takimbirkf 
+                global takimbiruf 
+                global takimbirpv 
+    ​
+                global takimikiok 
+                global takimikisg 
+                global takimikikf 
+                global takimikiuf 
+                global takimikipv 
+    ​
+                global takimbiroksut
+                global takimbirokteknik 
+                global takimbirokpas
+                global takimbiroksavunma 
+                global takimbirokfizik 
+                global takimbirokoverall 
+    ​
+                global takimbirsgsut 
+                global takimbirsgteknik 
+                global takimbirsgpas 
+                global takimbirsgsavunma 
+                global takimbirsgfizik 
+                global takimbirsgoverall 
+    ​
+                global takimbirkfsut 
+                global takimbirkfteknik 
+                global takimbirkfpas 
+                global takimbirkfsavunma 
+                global takimbirkffizik 
+                global takimbirkfoverall 
+    ​
+                global takimbirufsut 
+                global takimbirufteknik 
+                global takimbirufpas 
+                global takimbirufsavunma 
+                global takimbiruffizik 
+                global takimbirufoverall
+    ​
+                global takimbirpvsut 
+                global takimbirpvteknik 
+                global takimbirpvpas 
+                global takimbirpvsavunma 
+                global takimbirpvfizik 
+                global takimbirpvoverall
+                global takimikioksut 
+                global takimikiokteknik
+                global takimikiokpas 
+                global takimikioksavunma 
+                global takimikiokfizik 
+                global takimikiokoverall 
+    ​
+                global takimikisgsut 
+                global takimikisgteknik 
+                global takimikisgpas 
+                global takimikisgsavunma 
+                global takimikisgfizik 
+                global takimikisgoverall 
+    ​
+                global takimikikfsut 
+                global takimikikfteknik 
+                global takimikikfpas 
+                global takimikikfsavunma 
+                global takimikikffizik 
+                global takimikikfoverall 
+    ​
+                global takimikiufsut 
+                global takimikiufteknik 
+                global takimikiufpas 
+                global takimikiufsavunma 
+                global takimikiuffizik 
+                global takimikiufoverall 
+    ​
+                global takimikipvsut 
+                global takimikipvteknik 
+                global takimikipvpas 
+                global takimikipvsavunma 
+                global takimikipvfizik 
+                global takimikipvoverall
+    ​
+                global takimbirtopsahibi 
+                global takimbirtopsahibi2 
+                global takimbirsavunma 
+                global takimbirtime 
+                global takimbirsertlik 
+                global takimbirhücum 
+    ​
+                global takimikitopsahibi 
+                global takimikitopsahibi2 
+                global takimikisavunma 
+                global takimikitime 
+                global takimikisertlik 
+                global takimikihücum 
+    ​
+                global periyod 
+                global atakdevammi 
+                global zaman 
+    ​
+                global takimbirtakimfaul 
+                global takimikitakimfaul 
+    ​
+                global takimbirokfaul 
+                global takimbirsgfaul 
+                global takimbirkffaul 
+                global takimbiruffaul 
+                global takimbirpvfaul 
+    ​
+                global takimikiokfaul 
+                global takimikisgfaul 
+                global takimikikffaul 
+                global takimikiuffaul 
+                global takimikipvfaul 
+    ​
+    ​
+                global takimbirsayi 
+                global takimikisayi 
+                if atakdevammi == 0:
+                    liste1 = []
+                    for i in range(2):
+                        liste1.append(takimbirtopsahibi)
+                    liste1.append(takimbirtopsahibi2)
+                    liste1.append(takimbirok)
+                    liste1.append(takimbirsg)
+                    liste1.append(takimbirkf)
+                    liste1.append(takimbiruf)
+                    liste1.append(takimbirpv)
+    ​
+                    b = random.choice(liste1)
+                    print(b)
+                    time.sleep(2)
+                    
+                sutdeneme = Basketciler.query.filter_by(isim = b).first().şut
+                icerigirme = Basketciler.query.filter_by(isim = b).first().teknik
+                
+                fark = int((sutdeneme - icerigirme)/2)
+    ​
+    ​
+                liste2 = []
+                for i in range(50):
+                    liste2.append("pas")
+                for i in range(25-fark):
+                    liste2.append("icerigirme")
+                for i in range(25+fark):
+                    liste2.append("sut")    
+                if takimikisavunma == "adam":
+                    liste2.append("icerigirme")
+                    liste2.append("icerigirme")
+                else:   
+                    liste2.append("sut")
+                    liste2.append("sut")
+                 
+                for i in range(12 + int(takimikisertlik * 22/100)):    
+                    liste2.append("faul")
+                    
+    ​
+                c = random.choice(liste2)
+                print(c)
+                time.sleep(1)
+                if c == "sut":
+                    liste5 = []
+                    for i in range(80):
+                        liste5.append(0)
+                    x = Basketciler.query.filter_by(isim = b).first().mevki
+                    xx = Basketciler.query.filter_by(isim = b).first().şut
+                    
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım2).first().savunma
+                    for i in range(y):
+                        liste5.append(0)
+                    for i in range(xx):
+                        liste5.append(1)
+                    u = random.choice(liste5)
+                    print("girdi mi: ",u)
+                    time.sleep(2)
+                    if u == 1:
+                        takimbirsayi += 3
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        atakdevammi = 1
+                        evribaund()
+    ​
+                if c == "icerigirme":
+                    liste10=[]
+                    x = Basketciler.query.filter_by(isim = b).first().mevki                
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım2).first().savunma
+                    for i in range(icerigirme):
+                        liste10.append(1)
+                    for i in range(y):
+                        liste10.append(0)
+                    t = random.choice(liste10)
+                    print("icerigirme: ",t)
+                    time.sleep(2)
+                    if t == 1:
+                        takimbirsayi+=2
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        atakdevammi = 1
+                        evribaund()
+                
+    ​
+                if c == "faul":
+                    x = Basketciler.query.filter_by(isim = b).first().şut 
+                    x-=5
+                    a = randint(1,100)
+                    if a < x :
+                        takimbirsayi+=1
+                        print("Atis Basarili")
+                    a = randint(1,100)
+                    if a < x:
+                        takimbirsayi+=1
+                        print("Atis Basarili")
+                        time.sleep(2)
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        tarik()
+                    else:
+                        print("Atis Basarisiz")
+                        atakdevammi = 1
+                        evribaund()
+                
+                if c == "pas":
+                    a = randint(1,100)
+                    x = Basketciler.query.filter_by(isim = b).first().pas
+                    time.sleep(1)
+                    if a > x:
+                        print("Pas Başarısız")
+                        atakdevammi = 0
+                        tarik()
+                    else:
+    ​
+                        liste11=[]
+                        liste11.append(takimbirtopsahibi)
+                        liste11.append(takimbirtopsahibi)
+                        liste11.append(takimbirtopsahibi2)
+                        liste11.append(takimbirok)
+                        liste11.append(takimbirsg)
+                        liste11.append(takimbirkf)
+                        liste11.append(takimbiruf)
+                        liste11.append(takimbirpv)
+                        while liste11.count(b) > 0:
+                            liste11.remove(b)
+                        b = random.choice(liste11)
+                        print(b)
+                        time.sleep(2)
+                        atakdevammi = 1
+                        taha(b)
+            
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ##################################################################################
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+        def tarik(b=""):
+                global mac_haftası 
+                global takım1 
+                global takım2
+                global takım3
+                global takım4 
+                global takım5 
+                global takım6 
+                global takım7 
+                global takım8 
+    ​
+                global takimbir 
+                global takimiki 
+                global takimuc
+                global takimdort 
+                global takimbes 
+                global takimalti 
+                global takimyedi 
+                global takimsekiz
+    ​
+    ​
+                global takimbirok 
+                global takimbirsg 
+                global takimbirkf 
+                global takimbiruf 
+                global takimbirpv 
+    ​
+                global takimikiok 
+                global takimikisg 
+                global takimikikf 
+                global takimikiuf 
+                global takimikipv 
+    ​
+                global takimbiroksut
+                global takimbirokteknik 
+                global takimbirokpas
+                global takimbiroksavunma 
+                global takimbirokfizik 
+                global takimbirokoverall 
+    ​
+                global takimbirsgsut 
+                global takimbirsgteknik 
+                global takimbirsgpas 
+                global takimbirsgsavunma 
+                global takimbirsgfizik 
+                global takimbirsgoverall
+                global takimbirkfsut 
+                global takimbirkfteknik 
+                global takimbirkfpas 
+                global takimbirkfsavunma 
+                global takimbirkffizik 
+                global takimbirkfoverall 
+    ​
+                global takimbirufsut 
+                global takimbirufteknik 
+                global takimbirufpas 
+                global takimbirufsavunma 
+                global takimbiruffizik 
+                global takimbirufoverall
+    ​
+                global takimbirpvsut 
+                global takimbirpvteknik 
+                global takimbirpvpas 
+                global takimbirpvsavunma 
+                global takimbirpvfizik 
+                global takimbirpvoverall 
+    ​
+                global takimikioksut 
+                global takimikiokteknik
+                global takimikiokpas 
+                global takimikioksavunma 
+                global takimikiokfizik 
+                global takimikiokoverall 
+    ​
+                global takimikisgsut 
+                global takimikisgteknik 
+                global takimikisgpas 
+                global takimikisgsavunma 
+                global takimikisgfizik 
+                global takimikisgoverall 
+    ​
+                global takimikikfsut 
+                global takimikikfteknik 
+                global takimikikfpas 
+                global takimikikfsavunma 
+                global takimikikffizik 
+                global takimikikfoverall 
+    ​
+                global takimikiufsut 
+                global takimikiufteknik 
+                global takimikiufpas 
+                global takimikiufsavunma 
+                global takimikiuffizik 
+                global takimikiufoverall 
+    ​
+                global takimikipvsut 
+                global takimikipvteknik 
+                global takimikipvpas 
+                global takimikipvsavunma 
+                global takimikipvfizik 
+                global takimikipvoverall
+    ​
+                global takimbirtopsahibi 
+                global takimbirtopsahibi2 
+                global takimbirsavunma 
+                global takimbirtime 
+                global takimbirsertlik 
+                global takimbirhücum 
+    ​
+                global takimikitopsahibi 
+                global takimikitopsahibi2 
+                global takimikisavunma 
+                global takimikitime 
+                global takimikisertlik 
+                global takimikihücum 
+    ​
+                global periyod 
+                global atakdevammi 
+                global zaman 
+    ​
+                global takimbirtakimfaul 
+                global takimikitakimfaul 
+    ​
+                global takimbirokfaul 
+                global takimbirsgfaul 
+                global takimbirkffaul 
+                global takimbiruffaul 
+                global takimbirpvfaul 
+    ​
+                global takimikiokfaul 
+                global takimikisgfaul 
+                global takimikikffaul 
+                global takimikiuffaul 
+                global takimikipvfaul 
+    ​
+    ​
+                global takimbirsayi 
+                global takimikisayi 
+                if atakdevammi == 0:
+                    liste1 = []
+                    for i in range(2):
+                        liste1.append(takimikitopsahibi)
+                    liste1.append(takimikitopsahibi2)
+                    liste1.append(takimikiok)
+                    liste1.append(takimikisg)
+                    liste1.append(takimikikf)
+                    liste1.append(takimikiuf)
+                    liste1.append(takimikipv)
+    ​
+                    b = random.choice(liste1)
+                    print(b)
+                
+                
+                print("b",b)
+                sutdeneme = Basketciler.query.filter_by(isim = b).first().şut
+                icerigirme = Basketciler.query.filter_by(isim = b).first().teknik
+                
+                fark = int((sutdeneme - icerigirme)/2)
+    ​
+    ​
+                liste2 = []
+                for i in range(50):
+                    liste2.append("pas")
+                for i in range(25-fark):
+                    liste2.append("icerigirme")
+                for i in range(25+fark):
+                    liste2.append("sut")    
+                if takimikisavunma == "adam":
+                    liste2.append("icerigirme")
+                    liste2.append("icerigirme")
+                else:   
+                    liste2.append("sut")
+                    liste2.append("sut")
+                 
+                for i in range(12 + int(takimikisertlik * 22/100)):    
+                    liste2.append("faul")
+                c = random.choice(liste2)
+                print(c)
+                if c == "sut":
+                    liste5 = []
+                    for i in range(80):
+                        liste5.append(0)
+                    x = Basketciler.query.filter_by(isim = b).first().mevki
+                    xx = Basketciler.query.filter_by(isim = b).first().şut
+                    
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım1).first().savunma
+                    for i in range(y):
+                        liste5.append(0)
+                    for i in range(xx):
+                        liste5.append(1)
+                    u = random.choice(liste5)
+                    print("girdi mi: ",u)
+                    time.sleep(2)
+                    if u == 1:
+                        takimikisayi += 3
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        atakdevammi = 1
+                        depribaund()
+    ​
+                if c == "icerigirme":
+                    liste10=[]
+                    x = Basketciler.query.filter_by(isim = b).first().mevki              
+                    y = Basketciler.query.filter_by(mevki = x , takım =takım1).first().savunma
+                    for i in range(icerigirme):
+                        liste10.append(1)
+                    for i in range(y):
+                        liste10.append(0)
+                    t = random.choice(liste10)
+                    print("iceri girme: ",t)
+                    time.sleep(2)
+                    if t == 1:
+                        takimikisayi+=2
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        atakdevammi = 1
+                        depribaund()
+                
+    ​
+    ​
+                if c == "faul":
+                    x = Basketciler.query.filter_by(isim = b).first().şut 
+                    x-=5
+                    a = randint(1,100)
+                    if a < x :
+                        takimikisayi+=1
+                        print("Birinci atis basarili")
+                        time.sleep(1)
+                    else:
+                        print("Brinci atis isabetsiz")
+                        time.sleep(2)
+                    a = randint(1,100)
+                    if a < x:
+                        takimikisayi+=1
+                        print("İkinci Atis basarili")
+                        print("Skor: ",takimbirsayi," : ",takimikisayi)
+                        time.sleep(1)
+                        atakdevammi=0
+                        taha()
+                    else:
+                        print("İkinci atis basarisiz")
+                        atakdevammi = 1
+                        time.sleep(2)
+                        depribaund()
+                        
+                
+                if c == "pas":
+                    a = randint(1,100)
+                    time.sleep(1)
+                    x = Basketciler.query.filter_by(isim = b).first().pas
+                    if a > x:
+                        atakdevammi=0
+                        print("Pas Başarısız")
+                        taha()
+                    else:
+    ​
+                        liste11=[]
+                        liste11.append(takimikitopsahibi)
+                        liste11.append(takimikitopsahibi)
+                        liste11.append(takimikitopsahibi2)
+                        liste11.append(takimikiok)
+                        liste11.append(takimikisg)
+                        liste11.append(takimikikf)
+                        liste11.append(takimikiuf)
+                        liste11.append(takimikipv)
+                        while liste11.count(b) > 0:
+                            liste11.remove(b)
+                        b = random.choice(liste11)
+                        print(b)
+                        time.sleep(2)
+                        tarik(b)
+                    
+    ​
+                                   
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+     
+    ​
+        taha()
+
